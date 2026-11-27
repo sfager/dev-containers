@@ -17,5 +17,7 @@
             "label": "Angular Dev Server",
             "onAutoForward": "notify"
         }
-    }
+    },
+
+    "postCreateCommand": "npm install"
 }
