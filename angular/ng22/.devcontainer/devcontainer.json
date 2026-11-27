@@ -1,0 +1,21 @@
+{
+    "name": "Angular NG22 Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:24",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        // "ghcr.io/devcontainers/features/node:1": {
+        //     "version": "18"
+        // }
+        "ghcr.io/devcontainers-extra/features/angular-cli:2": {
+            "version": "22"
+        }
+    },
+
+    "forwardPorts": [4200],
+    "portsAttributes": {
+        "4200": {
+            "label": "Angular Dev Server",
+            "onAutoForward": "notify"
+        }
+    }
+}
